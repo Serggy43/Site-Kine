@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cabinet de Kinésithérapie – Serge PLANCHER</title>
+    <meta name="description" content="Cabinet de kinésithérapie du sport à Lyon – Serge Plancher, spécialisé en thérapie manuelle, rééducation sportive et prévention des blessures.">
+    <link rel="canonical" href="https://www.kinesport-lyon-plancher.fr">
+    <style>
+        :root {
+            --primary: #00bfa6;
+            --secondary: #00a0e3;
+            --accent: #ffb703;
+            --light: #f9f9f9;
+            --text-dark: #2a2a2a;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            margin: 0;
+            background: var(--light);
+            color: var(--text-dark);
+        }
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        header h1 { font-size: 2.5em; margin-bottom: 10px; }
+        header h2 { font-weight: 300; margin-top: 0; }
+        nav {
+            background: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        nav a {
+            color: var(--primary);
+            font-weight: 600;
+            text-decoration: none;
+            padding: 8px 14px;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background: var(--primary);
+            color: white;
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .services, .contact, .photos {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+        }
+        table { width: 100%; border-collapse: collapse; }
+        th {
+            background: var(--secondary);
+            color: white;
+            padding: 12px;
+            text-align: left;
+        }
+        td { padding: 12px; border-bottom: 1px solid #eee; }
+        .cta {
+            display: inline-block;
+            background: var(--accent);
+            color: #333;
+            padding: 12px 25px;
+            border-radius: 50px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: transform 0.2s, background 0.3s;
+        }
+        .cta:hover {
+            background: #ffa41b;
+            transform: scale(1.05);
+        }
+        iframe {
+            border: 0;
+            width: 100%;
+            height: 300px;
+            border-radius: 10px;
+        }
+        img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        footer {
+            background: var(--secondary);
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        @media (max-width: 768px) {
+            header h1 { font-size: 1.8em; }
+            header h2 { font-size: 1.2em; }
+            nav { flex-direction: column; gap: 5px; }
+            table, th, td { font-size: 0.9em; }
+        }
+        @media (max-width: 480px) {
+            section { padding: 20px 10px; }
+            .cta { padding: 10px 20px; font-size: 0.9em; }
+        }
+
+        /* 🎯 Galerie optimisée */
+        .photos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .photos img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .photos img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Cabinet de Kinésithérapie du Sport</h1>
+    <h2>Serge PLANCHER</h2>
+    <p>Rééducation – Prévention – Amélioration</p>
+</header>
+
+<nav>
+    <a href="#presentation">Présentation</a>
+    <a href="#services">Services</a>
+    <a href="#photos">Photos</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="presentation">
+    <h2>À propos</h2>
+    <p>Bienvenue sur mon site internet, je m'appelle Serge PLANCHER, je suis kinésithérapeute du sport formé en Thérapie Manuelle, situé à Lyon.  
+    Passionné par le corps humain, j’accompagne mes patients dans la récupération suite à une blessure, la prévention des blessures et l’optimisation de leur mobilité et de leur capacité.</p>
+</section>
+
+<section id="services" class="services">
+    <h2>Services</h2>
+    <table>
+        <tr>
+            <th>Service</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Rééducation sportive</td>
+            <td>Programmes personnalisés pour le retour à la performance.</td>
+        </tr>
+        <tr>
+            <td>Thérapie manuelle</td>
+            <td>Techniques manuelles pour soulager douleurs et tensions musculaires.</td>
+        </tr>
+        <tr>
+            <td>Prévention des blessures</td>
+            <td>Évaluation et correction des déséquilibres fonctionnels.</td>
+        </tr>
+    </table>
+</section>
+
+<section id="photos" class="photos">
+    <h2>Galerie</h2>
+    <img src="plaque-professionnelle.jpg" alt="Plaque professionnelle">
+    <img src="salle-attente.jpg" alt="Salle d'attente">
+    <img src="salle-soin-1.jpg" alt="Cabinet - Salle de soin">
+    <img src="salle-soin-2.jpg" alt="Cabinet - Salle de soin">
+    <img src="salle-gym-1.jpg" alt="Cabinet - Gymnase">
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact et Rendez-vous</h2>
+    <p><strong>Adresse :</strong> 20 rue de la Rize, 69003 Lyon</p>
+    <p><strong>Téléphone :</strong> 06 67 48 06 63</p>
+    <p><strong>Email :</strong> contact@kinesport-lyon-plancher.fr</p>
+    <a class="cta" href="https://user.clicrdv.com/plancher" target="_blank">📅 Prendre rendez-vous</a>
+
+    <h3>📍 Me trouver</h3>
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2781.73527539404!2d4.8578!3d45.7579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea5d31d90ef3%3A0xXXXXXXXXXXXXXXXX!2s20%20Rue%20de%20la%20Rize%2C%2069003%20Lyon!5e0!3m2!1sfr!2sfr!4v0000000000000"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+<footer>
+    <p>© 2025 <a href="https://www.kinesport-lyon-plancher.fr" style="color:white; text-decoration:none;">kinesport-lyon-plancher.fr</a> – Cabinet de Kinésithérapie Serge PLANCHER | Mentions légales</p>
+</footer>
+
+</body>
+</html>
